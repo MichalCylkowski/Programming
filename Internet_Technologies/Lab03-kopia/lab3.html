@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie1</title>
+    <style>
+       body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.content {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    background-color: #eaf2f8; 
+    padding: 20px; 
+}
+
+header {
+    flex: 1; 
+    margin-right: 20px; 
+    overflow-y: auto; 
+    max-height: calc(100vh - 40px); 
+    background-color: #dbe9f6; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+.right-column {
+    flex: 2; 
+    overflow-y: auto; 
+    max-height: calc(100vh - 40px); 
+    background-color: #cfe2f3; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+ul ul li a {
+    color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: #1a237e;
+    color: white;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    background-color: #cfe2f3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header {
+    float: left; 
+    width: 45%; 
+}
+
+.right-column {
+    float: right;
+    width: 45%; 
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 250px;
+    height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Linki</h1>
+            <ul>
+                <li><a href="https://gakko.pja.edu.pl">Gakko</a>
+                    <ul>
+                        <li><a href="https://gakko.pja.edu.pl">Gakko</a></li>
+                        <li><a href="https://pja.edu.pl">Pjatk</a></li>
+                        <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://pja.edu.pl">Pjatk</a></li>
+                <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+            </ul>
+        </header>
+        <div class="right-column">
+            <h2>Title 1</h2>
+            <p>Opis obrazka</p>
+            <p>
+                <img src="https://fedkolor.pl/4444/rozowy-kwiat.jpg" alt="kwiat">
+            </p>
+            <h3>Subtitle</h3>
+            <p>To jest krótki opis obrazka .</p>
+            <h3>Subtitle</h3>
+            <p>kwiat</p>
+            <h4>Title 2</h4>
+            <p>kwiat</p>
+
+            <form>
+                <div class="left-column">
+                    <label for="fname">Imię:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Nazwisko:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="description">Opis:</label><br>
+                    <textarea id="description" name="description" rows="4" cols="20"></textarea><br>
+                </div>
+                <div class="right-column">
+                    <label for="age">Wiek:</label><br>
+                    <select id="age" name="age">
+                        <option value="">Wybierz wiek</option>
+                        <option value="18">18</option>
+                        <option value="30">30</option>
+                    </select><br><br>
+                    <label>Opcje:</label><br>
+                    <input type="radio" id="option_a" name="options[]" value="a">
+                    <label for="option_a">Opcja A</label><br>
+                    <input type="radio" id="option_b" name="options[]" value="b">
+                    <label for="option_b">Opcja B</label><br>
+                    <input type="radio" id="option_c" name="options[]" value="c">
+                    <label for="option_c">Opcja C</label><br><br>
+                </div>
+                <input type="submit" value="Wyślij">
+            </form>
+            
+            
+            <table>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>sample text 1</p>
+        <p>sample text 2</p>
+        <p>sample text 3</p>
+    </footer>
+</body>
+</html>

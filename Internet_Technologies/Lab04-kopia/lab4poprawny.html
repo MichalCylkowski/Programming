@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .column {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-column {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .right-column {
+            overflow-y: auto; 
+        }
+        footer {
+            width: 100%;
+            text-align: center; 
+            margin-top: 20px;
+            background-color: #1a237e;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; 
+        }
+        footer p {
+            flex: 1;
+        }
+        ul li:hover ul {
+            display: block;
+        }
+        ul ul {
+            display: none;
+            position: absolute;
+            background-color: #1a237e;
+        }
+        ul ul li {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+        ul ul a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        ul ul a:hover {
+            background-color: #2c3e50;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #1a237e;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            margin: 0;
+            position: fixed; /* Dodana właściwość */
+            top: 0; /* Ustawienie górnego marginesu */
+            z-index: 999; /* Ustawienie wysokiej warstwy */
+        }
+        ul li {
+            margin: 5px;
+        }
+        ul li a {
+            color: white; 
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            border: 1px solid transparent; 
+            border-radius: 5px;
+        }
+        ul li a:hover {
+            background-color: #f0f0f0; 
+            color: #1a237e;
+        }
+        ul li ul li a {
+            color: green; 
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border-bottom: 1px solid #ddd;
+        }
+        form {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+        }
+        form label {
+            grid-column: span 2;
+        }
+        form textarea {
+            grid-column: span 2;
+            width: 100%;
+        }
+        form input[type="submit"] {
+            grid-column: span 2;
+            justify-self: center;
+        }
+        .bottom-text {
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .left-column {
+            flex: 1;
+            margin-right: 20px;
+            overflow-y: auto;
+            background-color: #dbe9f6;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .right-column {
+            flex: 1;
+            overflow-y: auto;
+            background-color: #cfe2f3;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        
+        @media only screen and (max-width: 1000px) {
+            .content {
+                flex-direction: column;
+            }
+    
+            .left-column, .right-column {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    
+        </head>
+        <body>
+            <div class="content">
+                <div class="left-column">
+                    <h1>Linki</h1>
+                    <ul>
+                        <li><a href="https://gakko.pja.edu.pl">Gakko</a>
+                            <ul>
+                                <li><a href="https://gakko.pja.edu.pl">Gakko</a></li>
+                                <li><a href="https://pja.edu.pl">Pjatk</a></li>
+                                <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://pja.edu.pl">Pjatk</a></li>
+                        <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h2>Title 1</h2>
+                    <p>Opis obrazka</p>
+                    <p>
+                        <img src="https://fedkolor.pl/4444/rozowy-kwiat.jpg" alt="kwiat">
+                    </p>
+                    <h3>Subtitle</h3>
+                    <p>To jest krótki opis obrazka .</p>
+                    <h3>Subtitle</h3>
+                    <p>kwiat</p>
+                    <h4>Title 2</h4>
+                    <p>kwiat</p>
+        
+                    <form>
+                        <div class="left-column">
+                            <label for="fname">Imię:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Nazwisko:</label><br>
+                            <input type="text" id="lname" name="lname"><br>
+                            <label for="description">Opis:</label><br>
+                            <textarea id="description" name="description" rows="4" cols="20"></textarea><br>
+                        </div>
+                        <div class="right-column">
+                            <label for="age">Wiek:</label><br>
+                            <select id="age" name="age">
+                                <option value="">Wybierz wiek</option>
+                                <option value="18">18</option>
+                                <option value="30">30</option>
+                            </select><br><br>
+                            <label>Opcje:</label><br>
+                            <input type="radio" id="option_a" name="options[]" value="a">
+                            <label for="option_a">Opcja A</label><br>
+                            <input type="radio" id="option_b" name="options[]" value="b">
+                            <label for="option_b">Opcja B</label><br>
+                            <input type="radio" id="option_c" name="options[]" value="c">
+                            <label for="option_c">Opcja C</label><br><br>
+                        </div>
+                        <input type="submit" value="Wyślij">
+                    </form>
+                    
+                    
+                    <table>
+                        <tr>
+                            <th>col1</th>
+                            <th>col2</th>
+                            <th>col3</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+            <footer>
+                <p>sample text 1</p>
+                <p>sample text 2</p>
+                <p>sample text 3</p>
+            </footer>
+        </body>
+        </html>
+        

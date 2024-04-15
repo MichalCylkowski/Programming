@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .column {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-column {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .right-column {
+            overflow-y: auto; 
+        }
+        footer {
+            text-align: center; 
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        ul li {
+            transition: background-color 0.3s; 
+            margin: 5px;
+        }
+        ul li:hover {
+            background-color: #d3d3d3; 
+        }
+        ul li a {
+            color: blue; 
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            border: 1px solid transparent; 
+            border-radius: 5px;
+        }
+        ul li a:hover {
+            background-color: #f0f0f0; 
+        }
+        ul li ul li a {
+            color: green; 
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+        }
+        form label {
+            grid-column: span 2;
+        }
+        form textarea {
+            grid-column: span 2;
+            width: 100%;
+        }
+        form input[type="submit"] {
+            grid-column: span 2;
+            justify-self: center;
+        }
+        .bottom-text {
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Linki</h1>
+        <ul>
+            <li><a href="https://gakko.pja.edu.pl">Gakko</a>
+                <ul>
+                    <li><a href="https://gakko.pja.edu.pl">Gakko</a></li>
+                    <li><a href="https://pja.edu.pl">Pjatk</a></li>
+                    <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+                </ul>
+            </li>
+            <li><a href="https://pja.edu.pl">Pjatk</a></li>
+            <li><a href="https://pja.edu.pl/kursy/studia-mba/?gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMXbKeT56CE6k-nNU-MKO6-NQ9zgrg0P4CJSn_KxujzBMDKaz8zq8OxoCNMQQAvD_BwE">Pjatk WWA</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="column left-column">
+            <h2>Title 1</h2>
+            <h3>Subtitle</h3>
+            <p>Opis obrazka</p>
+            <p>
+                <img src="https://fedkolor.pl/4444/rozowy-kwiat.jpg" alt="kwiat">
+            </p>
+        </div>
+        <div class="column right-column">
+            <h4>Title 2</h4>
+            <p>kwiat</p>
+
+            <form>
+                <label for="fname">Imię:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Nazwisko:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="age">Wiek:</label>
+                <select id="age" name="age">
+                    <option value="">Wybierz wiek</option>
+                    <option value="18">18</option>
+                    <option value="30">30</option>
+                </select>
+                <label for="description">Opis:</label>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                <label>Opcje:</label>
+                <input type="radio" id="option_a" name="options[]" value="a">
+                <label for="option_a">Opcja A</label>
+                <input type="radio" id="option_b" name="options[]" value="b">
+                <label for="option_b">Opcja B</label>
+                <input type="radio" id="option_c" name="options[]" value="c">
+                <label for="option_c">Opcja C</label>
+                <input type="submit" value="Wyślij">
+            </form>
+            
+            <table>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="bottom-text">
+        <p>sample text 1</p>
+        <p>sample text 2</p>
+        <p>sample text 3</p>
+    </footer>
+</body>
+</html>

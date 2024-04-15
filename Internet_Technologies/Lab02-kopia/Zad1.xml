@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:bio="http://purl.org/vocab/bio/0.1/"
+>
+
+<foaf:Person rdf:about="#mcylkowski">
+   <foaf:name>Michał Cylkowski</foaf:name>
+   <foaf:gender>Male</foaf:gender>
+   <foaf:givenname>Michał </foaf:givenname>
+   <foaf:family_name>Cylkowski</foaf:family_name>
+   <foaf:homepage rdf:resource="http://wmii.uwm.edu.pl/~denisjuk/"/>
+   <bio:Graduation>
+     <rdf:Seq>
+       <rdf:li>
+         <foaf:Organization rdf:about="#xlo">
+           <foaf:name>X Liceum Ogólnokształcące im Lecha Bądkowskiego</foaf:name>
+           <foaf:homepage rdf:resource="https://lo10.edu.gdansk.pl/pl"/>
+           <bio:Date>2022-06-30</bio:Date>
+         </foaf:Organization>
+       </rdf:li>
+       <rdf:li>
+         <foaf:Organization rdf:about="#pja">
+           <foaf:name>Polsko-Japońska Akademia Technik Komputerowych</foaf:name>
+           <foaf:homepage rdf:resource="https://gdansk.pja.edu.pl/pl/"/>
+           <bio:Date>2022-06-30</bio:Date>
+         </foaf:Organization>
+       </rdf:li>
+     </rdf:Seq>
+   </bio:Graduation>
+   <bio:position>Student</bio:position>
+</foaf:Person>
+
+</rdf:RDF>
