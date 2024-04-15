@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #F0F8FF;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5DC;
+}
+
+.action-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.edit-link, .delete-link, .add-user-link {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-link {
+    background-color: #dc3545;
+}
+
+.add-user-link {
+    background-color: #4169E1;
+}
