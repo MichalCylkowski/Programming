@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java07zad2/Java8/Java8.iml" filepath="$PROJECT_DIR$/java07zad2/Java8/Java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java07.iml" filepath="$PROJECT_DIR$/java07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java07zad2/java07zad2.iml" filepath="$PROJECT_DIR$/java07zad2/java07zad2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java07zad2/Java8/java08 zad2/java08 zad2.iml" filepath="$PROJECT_DIR$/java07zad2/Java8/java08 zad2/java08 zad2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java07zad2/Java8/java8zad3/java8zad3.iml" filepath="$PROJECT_DIR$/java07zad2/Java8/java8zad3/java8zad3.iml" />
+    </modules>
+  </component>
+</project>
